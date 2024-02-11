@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		0BBC1D272B796F2A0055FEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D262B796F2A0055FEEF /* AppDelegate.swift */; };
 		0BBC1D292B796F2A0055FEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D282B796F2A0055FEEF /* SceneDelegate.swift */; };
-		0BBC1D2B2B796F2A0055FEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D2A2B796F2A0055FEEF /* ViewController.swift */; };
-		0BBC1D2E2B796F2A0055FEEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBC1D2C2B796F2A0055FEEF /* Main.storyboard */; };
+		0BBC1D2B2B796F2A0055FEEF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D2A2B796F2A0055FEEF /* DetailViewController.swift */; };
 		0BBC1D302B796F2C0055FEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBC1D2F2B796F2C0055FEEF /* Assets.xcassets */; };
 		0BBC1D332B796F2C0055FEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBC1D312B796F2C0055FEEF /* LaunchScreen.storyboard */; };
+		0BBC1D412B7970C10055FEEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D402B7970C10055FEEF /* MainViewController.swift */; };
+		0BBC1D432B7971080055FEEF /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D422B7971080055FEEF /* SettingModel.swift */; };
+		0BBC1D452B7971410055FEEF /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D442B7971410055FEEF /* DetailModel.swift */; };
+		0BBC1D472B7971640055FEEF /* StandartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D462B7971640055FEEF /* StandartTableViewCell.swift */; };
+		0BBC1D492B79717D0055FEEF /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D482B79717D0055FEEF /* WordTableViewCell.swift */; };
+		0BBC1D4B2B79719D0055FEEF /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D4A2B79719D0055FEEF /* SwitchTableViewCell.swift */; };
+		0BBC1D4D2B7971C60055FEEF /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D4C2B7971C60055FEEF /* NumberTableViewCell.swift */; };
+		0BBC1D4F2B7971E30055FEEF /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC1D4E2B7971E30055FEEF /* DetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BBC1D232B796F2A0055FEEF /* iOS12-HW15-Mikhailova Olga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS12-HW15-Mikhailova Olga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BBC1D262B796F2A0055FEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BBC1D282B796F2A0055FEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0BBC1D2A2B796F2A0055FEEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0BBC1D2D2B796F2A0055FEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BBC1D2A2B796F2A0055FEEF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0BBC1D2F2B796F2C0055FEEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BBC1D322B796F2C0055FEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BBC1D342B796F2C0055FEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BBC1D402B7970C10055FEEF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0BBC1D422B7971080055FEEF /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		0BBC1D442B7971410055FEEF /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		0BBC1D462B7971640055FEEF /* StandartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartTableViewCell.swift; sourceTree = "<group>"; };
+		0BBC1D482B79717D0055FEEF /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		0BBC1D4A2B79719D0055FEEF /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		0BBC1D4C2B7971C60055FEEF /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
+		0BBC1D4E2B7971E30055FEEF /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,70 @@
 		0BBC1D252B796F2A0055FEEF /* iOS12-HW15-Mikhailova Olga */ = {
 			isa = PBXGroup;
 			children = (
+				0BBC1D3A2B796F3D0055FEEF /* App */,
+				0BBC1D3C2B7970500055FEEF /* Sources */,
+				0BBC1D3B2B796F670055FEEF /* Resouces */,
+			);
+			path = "iOS12-HW15-Mikhailova Olga";
+			sourceTree = "<group>";
+		};
+		0BBC1D3A2B796F3D0055FEEF /* App */ = {
+			isa = PBXGroup;
+			children = (
 				0BBC1D262B796F2A0055FEEF /* AppDelegate.swift */,
 				0BBC1D282B796F2A0055FEEF /* SceneDelegate.swift */,
-				0BBC1D2A2B796F2A0055FEEF /* ViewController.swift */,
-				0BBC1D2C2B796F2A0055FEEF /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0BBC1D3B2B796F670055FEEF /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
 				0BBC1D2F2B796F2C0055FEEF /* Assets.xcassets */,
 				0BBC1D312B796F2C0055FEEF /* LaunchScreen.storyboard */,
 				0BBC1D342B796F2C0055FEEF /* Info.plist */,
 			);
-			path = "iOS12-HW15-Mikhailova Olga";
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		0BBC1D3C2B7970500055FEEF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC1D3F2B7970890055FEEF /* Controllers */,
+				0BBC1D3E2B79707A0055FEEF /* Model */,
+				0BBC1D3D2B7970600055FEEF /* TableViewCell */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0BBC1D3D2B7970600055FEEF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC1D462B7971640055FEEF /* StandartTableViewCell.swift */,
+				0BBC1D482B79717D0055FEEF /* WordTableViewCell.swift */,
+				0BBC1D4A2B79719D0055FEEF /* SwitchTableViewCell.swift */,
+				0BBC1D4C2B7971C60055FEEF /* NumberTableViewCell.swift */,
+				0BBC1D4E2B7971E30055FEEF /* DetailTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		0BBC1D3E2B79707A0055FEEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC1D422B7971080055FEEF /* SettingModel.swift */,
+				0BBC1D442B7971410055FEEF /* DetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BBC1D3F2B7970890055FEEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC1D2A2B796F2A0055FEEF /* DetailViewController.swift */,
+				0BBC1D402B7970C10055FEEF /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +196,6 @@
 			files = (
 				0BBC1D332B796F2C0055FEEF /* LaunchScreen.storyboard in Resources */,
 				0BBC1D302B796F2C0055FEEF /* Assets.xcassets in Resources */,
-				0BBC1D2E2B796F2A0055FEEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +206,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BBC1D2B2B796F2A0055FEEF /* ViewController.swift in Sources */,
+				0BBC1D452B7971410055FEEF /* DetailModel.swift in Sources */,
+				0BBC1D492B79717D0055FEEF /* WordTableViewCell.swift in Sources */,
+				0BBC1D432B7971080055FEEF /* SettingModel.swift in Sources */,
+				0BBC1D472B7971640055FEEF /* StandartTableViewCell.swift in Sources */,
+				0BBC1D2B2B796F2A0055FEEF /* DetailViewController.swift in Sources */,
+				0BBC1D4B2B79719D0055FEEF /* SwitchTableViewCell.swift in Sources */,
 				0BBC1D272B796F2A0055FEEF /* AppDelegate.swift in Sources */,
 				0BBC1D292B796F2A0055FEEF /* SceneDelegate.swift in Sources */,
+				0BBC1D4D2B7971C60055FEEF /* NumberTableViewCell.swift in Sources */,
+				0BBC1D412B7970C10055FEEF /* MainViewController.swift in Sources */,
+				0BBC1D4F2B7971E30055FEEF /* DetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0BBC1D2C2B796F2A0055FEEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BBC1D2D2B796F2A0055FEEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0BBC1D312B796F2C0055FEEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW15-Mikhailova Olga/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW15-Mikhailova Olga/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW15-Mikhailova Olga/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW15-Mikhailova Olga/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
