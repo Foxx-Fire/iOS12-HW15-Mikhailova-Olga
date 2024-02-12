@@ -12,8 +12,8 @@ class StandartTableViewCell: UITableViewCell {
     class var identifier: String { "StandartTableViewCell" }
     
     fileprivate enum Constants {
-        static var smallOffset: CGFloat = 10
-        static var middleOffset: CGFloat = 15
+        static var smallOffset: CGFloat = 2
+        static var middleOffset: CGFloat = 6
         static var bigOffset: CGFloat = 32
     }
     
@@ -50,7 +50,7 @@ class StandartTableViewCell: UITableViewCell {
     
     private lazy var background: UILabel = {
         let label = UILabel()
-        label.layer.cornerRadius = 10
+        label.layer.cornerRadius = 7
         label.clipsToBounds = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -93,20 +93,20 @@ class StandartTableViewCell: UITableViewCell {
     
     private func setupLayout() {
         NSLayoutConstraint.activate([
-            background.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Constants.smallOffset),
-            background.topAnchor.constraint(equalTo: self.topAnchor, constant: Constants.smallOffset),
-            background.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Constants.smallOffset),
+            background.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Constants.middleOffset),
+            background.topAnchor.constraint(equalTo: self.topAnchor, constant: Constants.middleOffset),
+            background.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Constants.middleOffset),
             background.heightAnchor.constraint(equalToConstant: Constants.bigOffset),
             background.widthAnchor.constraint(equalToConstant: Constants.bigOffset),
             
-            icon.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Constants.smallOffset),
-            icon.topAnchor.constraint(equalTo: self.topAnchor, constant: Constants.middleOffset),
-            icon.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Constants.middleOffset),
-            icon.heightAnchor.constraint(equalToConstant: Constants.bigOffset),
-            icon.widthAnchor.constraint(equalToConstant: Constants.bigOffset),
+            icon.leadingAnchor.constraint(equalTo: background.leadingAnchor, constant: Constants.smallOffset),
+            icon.topAnchor.constraint(equalTo: background.topAnchor, constant: Constants.smallOffset),
+            icon.bottomAnchor.constraint(equalTo: background.bottomAnchor, constant: -Constants.smallOffset),
+            icon.trailingAnchor.constraint(equalTo: background.trailingAnchor, constant: -Constants.smallOffset),
             
             setting.leadingAnchor.constraint(equalTo: icon.trailingAnchor, constant: 20),
-            setting.centerYAnchor.constraint(equalTo: centerYAnchor)
+            setting.centerYAnchor.constraint(equalTo: centerYAnchor),
+            setting.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -70)
         ])
         
     }

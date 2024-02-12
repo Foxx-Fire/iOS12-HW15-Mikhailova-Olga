@@ -16,10 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let viewController = MainViewController()
         viewController.settings = Settings.arrayOfSettings
-        
-        //MARK: - это не помогло появиться таблице - это вообще надо сюда было передавать?
-        viewController.general = General.arrayGeneral
-        
+        viewController.general = General.arrayGeneral 
         let navigationController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
