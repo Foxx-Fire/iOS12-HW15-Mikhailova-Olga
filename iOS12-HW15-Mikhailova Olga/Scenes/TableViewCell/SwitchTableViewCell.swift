@@ -12,7 +12,7 @@ class SwitchTableViewCell: StandartTableViewCell {
     override class var identifier: String { "SwitchTableViewCell" }
     
     fileprivate enum Constants {
-        static let smallOffset: CGFloat = 10
+        static let smallOffset: CGFloat = 6
     }
     
     // MARK: - Outlets

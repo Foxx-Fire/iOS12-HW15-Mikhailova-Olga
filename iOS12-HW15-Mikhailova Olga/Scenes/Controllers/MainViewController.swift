@@ -8,49 +8,22 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    var settings = Settings.arrayOfSettings
+    var general = General.arrayGeneral
     
-    var settings: [[Settings]]?
-    var general: [[General]]?
-    
-    // MARK: - Outlets
-    
-    private lazy var tableView: UITableView  = {
-        let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(StandartTableViewCell.self, forCellReuseIdentifier: StandartTableViewCell.identifier )
-        tableView.register(SwitchTableViewCell.self, forCellReuseIdentifier: SwitchTableViewCell.identifier )
-        tableView.register(NumberTableViewCell.self, forCellReuseIdentifier: NumberTableViewCell.identifier)
-        tableView.register(WordTableViewCell.self, forCellReuseIdentifier: WordTableViewCell.identifier)
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
+    override func loadView() {
+        
+        let tableView = MainTableView()
+        tableView.tableView.delegate = self
+        tableView.tableView.dataSource = self
+        view = tableView
+    }
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         title = "Настройки"
-//        navigationController?.navigationBar.prefersLargeTitles = true
-//        navigationController?.navigationItem.title = "Настройки"
-        setupHierarchy()
-        setupLayout()
-    }
-    
-    // MARK: - Setups
-    
-    private func setupHierarchy() {
-        view.addSubview(tableView)
-    }
-    
-    private func setupLayout() {
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
     }
 }
 
@@ -58,10 +31,9 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      
-        let settingsOfIphone = settings?[indexPath.section][indexPath.row]
+        let settingsOfIphone = settings[indexPath.section][indexPath.row]
         
-        switch settingsOfIphone?.adds {
+        switch settingsOfIphone.adds {
         case .standartType:
             let cell = tableView.dequeueReusableCell(withIdentifier: StandartTableViewCell.identifier, for: indexPath) as? StandartTableViewCell
             guard let cell else { return UITableViewCell() }
@@ -100,11 +72,12 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        settings?[section].count ?? 0
+         settings[section].count
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        settings?.count ?? 0
+        settings.count
     }
 }
 
@@ -116,14 +89,15 @@ extension MainViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = DetailViewController()
-        tableView.deselectRow(at: indexPath, animated: true)
-        var settingsList = settings?[indexPath.section][indexPath.row]
-        if settingsList?.setting == "Основные" {
-            navigationController?.pushViewController(viewController, animated: true)
+    tableView.deselectRow(at: indexPath, animated: true)
+            var settings = settings[indexPath.section][indexPath.row]
+            let viewController = DetailViewController()
+            if settings.setting == "Основные" {
+                viewController.generalDetail = general
+               navigationController?.pushViewController(viewController, animated: true)
+            }
         }
-  
-        let settingsOfIphone = settings?[indexPath.section][indexPath.row]
-        print("Нажата ячейка \(indexPath.row) \( settingsOfIphone?.setting ?? "")" )
     }
-}
+
+
+
