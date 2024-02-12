@@ -12,7 +12,7 @@ class NumberTableViewCell: StandartTableViewCell {
     override class var identifier: String { "NumberTableViewCell" }
     
     fileprivate enum Constants {
-        static var smallOffset: CGFloat = 10
+        static var smallOffset: CGFloat = 9
         static var bigOffset: CGFloat = 25
     }
     
@@ -64,9 +64,9 @@ class NumberTableViewCell: StandartTableViewCell {
             background.heightAnchor.constraint(equalToConstant: Constants.bigOffset),
             background.widthAnchor.constraint(equalToConstant: Constants.bigOffset),
             
-            number.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-            number.topAnchor.constraint(equalTo: self.topAnchor, constant: Constants.smallOffset),
-            number.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Constants.smallOffset),
+            number.trailingAnchor.constraint(equalTo: background.trailingAnchor),
+            number.topAnchor.constraint(equalTo: background.topAnchor),
+            number.bottomAnchor.constraint(equalTo: background.bottomAnchor),
             number.heightAnchor.constraint(equalToConstant: Constants.bigOffset),
             number.widthAnchor.constraint(equalToConstant: Constants.bigOffset)
         ])
